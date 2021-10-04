@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- todo01 Thay đổi tiêu đề trang -->
-    <title>MeeShop - sản phẩm Áo Khoác Nam</title>
+    <title>MeeShop - sản phẩm Mắt Kính</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-md-12 mb-0"><a href="index.html">Trang Chủ</a> <!-- todo04 Thay đổi tên trang chủ nếu cần -->
             <span class="mx-2 mb-0">/</span>
-            <strong class="text-black">Áo Khoác Nam</strong> <!-- todo05 Thay đổi tên sản phẩm -->
+            <strong class="text-black">Mắt Kính Thời Trang</strong> <!-- todo05 Thay đổi tên sản phẩm -->
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
           <div class="col-md-6">
             <div class="item-entry">
               <a href="#" class="product-item md-height bg-gray d-block">
-                <img src="images/model_5.png" alt="Image" class="img-fluid"> <!-- todo06 Thay đổi ảnh sản phẩm -->
+                <img src="images/person_4.jpg" alt="Image" class="img-fluid"> <!-- todo06 Thay đổi ảnh sản phẩm -->
               </a>
               
             </div>
@@ -68,22 +68,23 @@
           </div>
           <div class="col-md-6">
             <!-- todo07 Thay đổi ID sản phẩm, tên sản phẩm -->
-            <h2 class="text-black" data-product-id="P01" id="product-name">Áo Khoác Nam</h2>
+            <h2 class="text-black" data-product-id="P05" id="product-name">Áo Khoác Trẻ Em</h2>
             <!-- todo08 Thay đổi miêu tả cho sản phẩm -->
-            <p>Áo khóa toát lên vẻ nam tính của bạn.</p>
-            <p class="mb-4">Sự lịch lãm và quý phái. Có nhiều màu sắc cho bạn lựa chọn, và nhiều kích cỡ</p>
-            <!-- todo09 Thay đổi giá tiền -->
-            <p><strong class="text-primary h4" id="product-price">VND 500.000</strong></p>
+            <p>Mắt kính thời trang cao cấp, xịn xò, mẫu mã hợp thời thượng, bạn không phải lăn xăn về giá cả</p>
+            <p class="mb-4">Phù hợp cho mọi đối tượng sử dụng, với công dụng chống bụi, tia UV, tia cực tím cực đỉnh.</p>
+           <!-- todo09 Thay đổi giá tiền -->
+            <p>
+              <del>VND 500.000</del>
+              <strong class="text-primary h4" id="product-price">VND 360.000</strong></p>
             <div class="mb-1 d-flex">
               <div class="form-group">
-          <label for="product-sizes">Chọn cỡ</label>
+          <label for="product-sizes">Chọn Màu</label>
           <!-- todo10 Thay đổi cỡ -->
           <select class="form-control" id="product-sizes">
-            <option>X</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-            <option>XXL</option>
+            <option>Trắng</option>
+            <option>Đen</option>
+            <option>Xám</option>
+            <option>Hồng</option>
           </select>
         </div>
             </div>
@@ -235,6 +236,12 @@
                     <input type="text" class="form-control" id="customer_address" name="customer_address" required>
                   </div>
                 </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="customer_message" class="text-black">Lời Nhắn <span class="text-danger"></span></label>
+                    <input type="text" class="form-control" id="customer_message" name="customer_message" >
+                  </div>
+                </div>
                 <input type="hidden" name="product_id">
           </div>
           <div class="modal-footer">
@@ -255,7 +262,7 @@
     });
     // todo17 đường dẫn tới script -->
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwVgsR1-PKlefnsJA2329E9XqO86ls9tVkl_InIJKMFh19hFFcD/exec'
-    const form = document.forms['submit-to-google-sheet'] 
+    const form = document.forms['submit-to-google-sheet']
 
     form.addEventListener('submit', e => {
       e.preventDefault()
